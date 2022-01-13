@@ -21,3 +21,4 @@ var funny:Float = (healthBar.percent * 0.01) + 0.01;
 			iconP1.updateHitbox();
 			iconP2.updateHitbox();
 		}
+			//PASTE THIS IN PLAYSTATE BELOW LINE 4344!
