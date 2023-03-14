@@ -68,9 +68,7 @@ https://user-images.githubusercontent.com/92494313/225106201-67e2140a-7b21-4d12-
 
 if you dont know the difference, look at a gapple video and see if you can spot anything
 
-### end of quick note
-
-## main stuff
+## ok back to the main stuff
 
 go to playstate and search for
 
