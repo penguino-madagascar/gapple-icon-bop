@@ -48,7 +48,7 @@ and then add
 ```
 public var gfSpeed:Int = 1;
 ```
-like this
+under health like this
 
 <img width="162" alt="Screenshot 2023-03-14 at 12 16 03 PM" src="https://user-images.githubusercontent.com/92494313/225113259-e61e2dc4-d30f-41eb-84c3-13044b8b1c00.png">
 
