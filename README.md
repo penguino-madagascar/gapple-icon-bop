@@ -43,18 +43,17 @@ if (curBeat % gfSpeed == 0) {
 					iconP2.updateHitbox();
 				}
 ```
-and then add
+if you dont have "gfSpeed" then add it above health like this
+
+<img width="162" alt="Screenshot 2023-03-14 at 12 16 03 PM" src="https://user-images.githubusercontent.com/92494313/225113259-e61e2dc4-d30f-41eb-84c3-13044b8b1c00.png">
 
 ```
 public var gfSpeed:Int = 1;
 ```
-under health like this
-
-<img width="162" alt="Screenshot 2023-03-14 at 12 16 03 PM" src="https://user-images.githubusercontent.com/92494313/225113259-e61e2dc4-d30f-41eb-84c3-13044b8b1c00.png">
 
 and thats it! :D
 
-# 0.5 to the latest version (0.6.3)
+# 0.5+
 
 ### quick note before i move on
 
@@ -95,6 +94,6 @@ iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.perc
 		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
 ```
 
-and then add in the stuff that i already talked about (gfSpeed and the icon bounce)
+and then add in the stuff that i already talked about in the 0.4.2 section (u dont need to add in the gfspeed because it was already added)
 
 and your done! :D
