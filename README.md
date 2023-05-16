@@ -1,4 +1,4 @@
-# note: this tutorial was used solely on psych engine (u can do this on any engine if you modify the code n stuff)
+# note: this tutorial was made solely on psych engine (u can do this on any engine if you modify the code n stuff)
 
 ## 0.4.2 and older
 
