@@ -45,6 +45,7 @@ if (curBeat % gfSpeed == 0) {
 					iconP2.updateHitbox();
 				}
 ```
+idk if this was already added but
 if you dont have "gfSpeed" then add it
 
 ```
