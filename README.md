@@ -99,6 +99,36 @@ iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.perc
 		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
 ```
 
-and then add in the stuff that i already talked about in the 0.4.2 section (u dont need to add in the gfspeed because it was already added)
+search for this
+
+<img width="141" alt="Screenshot 2023-06-13 at 7 00 06 PM" src="https://github.com/lowqualitypotato/gapple-icon-bop/assets/92494313/9efdf2a0-310f-49c8-958e-32b170119b14">
+
+and then swap it with
+
+```
+if (curBeat % gfSpeed == 0) {
+					curBeat % (gfSpeed * 2) == 0 ? {
+						iconP1.scale.set(1.1, 0.8);
+						iconP2.scale.set(1.1, 1.3);
+		
+						FlxTween.angle(iconP1, -15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+						FlxTween.angle(iconP2, 15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+					} : {
+						iconP1.scale.set(1.1, 1.3);
+						iconP2.scale.set(1.1, 0.8);
+		
+						FlxTween.angle(iconP2, -15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+						FlxTween.angle(iconP1, 15, 0, Conductor.crochet / 1300 * gfSpeed, {ease: FlxEase.quadOut});
+					}
+		
+					FlxTween.tween(iconP1, {'scale.x': 1, 'scale.y': 1}, Conductor.crochet / 1250 * gfSpeed, {ease: FlxEase.quadOut});
+					FlxTween.tween(iconP2, {'scale.x': 1, 'scale.y': 1}, Conductor.crochet / 1250 * gfSpeed, {ease: FlxEase.quadOut});
+		
+					iconP1.updateHitbox();
+					iconP2.updateHitbox();
+				}
+```
+
+> (while you're at it, check if gfspeed was already added)
 
 and your done! :D
