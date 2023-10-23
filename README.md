@@ -66,19 +66,18 @@ replace healthicon.hx with this
 
 https://www.mediafire.com/file/a1kyahbsirlggux/HealthIcon.hx/file
 
-if you dont replace it, the icon bounce will look like this
+for some reason, the updatehitbox function thing for the icons fucking messed up the scales n stuff
+heres what it looks like with the updatehitbox stuff
 
 https://user-images.githubusercontent.com/92494313/225106201-67e2140a-7b21-4d12-86f4-3d62d8c71d75.mov
 
-if you dont know the difference, look at a gapple video and see if you can spot anything
-
 ## ok back to the main stuff
 
-go to playstate and search for
+go to PlayState.hx and search for
 
 <img width="477" alt="Screenshot 2023-03-14 at 12 32 45 PM" src="https://user-images.githubusercontent.com/92494313/225116871-d701c229-94e4-46ab-a48c-78a2a35380bc.png">
 
-and swap it with
+swap it with
 
 ```
 iconP1.centerOffsets();
@@ -99,7 +98,7 @@ iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.perc
 		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
 ```
 
-search for this
+finally, search for this
 
 <img width="141" alt="Screenshot 2023-06-13 at 7 00 06 PM" src="https://github.com/lowqualitypotato/gapple-icon-bop/assets/92494313/9efdf2a0-310f-49c8-958e-32b170119b14">
 
