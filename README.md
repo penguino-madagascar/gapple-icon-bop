@@ -58,7 +58,7 @@ you can place it anywhere but i highly recommend adding it right here
 
 and thats it! :D
 
-# 0.5 to 0.6.3 (apparently, psych engine updated and it organized their stuff and added a ton of shit. i might update this for 0.7+ but who knows)
+# 0.5 to 0.6.3 (psych engine updated and it added a ton of shit. (organized stuff, new classes for huds, hscript stuff, etc.) i might update this for 0.7+ but who knows)
 
 ### quick note before i move on
 
